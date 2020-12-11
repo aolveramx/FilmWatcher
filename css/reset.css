@@ -1,0 +1,52 @@
+/* Reinicio de estilo */
+@font-face {
+  font-family: 'Noto', sans-serif;
+  src: url('/fonts/NotoSans-Regular.ttf');
+}
+
+:root {
+  --background-dark-color: #141414;
+  --primary-color: #e50914;
+  --primary-text-color: #fff;
+  --secondary-text-color: #999;
+  --videos-width: 1280px;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Noto';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-dark-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--primary-text-color);
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+}

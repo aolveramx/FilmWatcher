@@ -1,0 +1,136 @@
+.showcase-404 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url('../img/404.jpg') no-repeat center center/cover;
+}
+
+.showcase-404::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+.showcase-404-top {
+  position: relative;
+  height: 10rem;
+  z-index: 2;
+}
+
+.showcase-404-top img {
+  width: 31rem;
+  position: absolute;
+  top: 37%;
+  left: 37%;
+  z-index: 2;
+}
+
+.showcase-404-top a {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+}
+
+.showcase-content-404 {
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  text-align: center;
+  margin-top: 14rem;
+}
+
+.showcase-content-404 h1 {
+  font-size: 10rem;
+  line-height: 5rem;
+  margin: 0 0 2rem;
+}
+
+.showcase-content-404 p {
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  font-size: 4rem;
+  line-height: 3rem;
+  margin: 0 0 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 1390px) {
+  .showcase-404-top img {
+    width: 28rem;
+    left: 20%;
+  }
+}
+
+@media (max-width: 810px) {
+  .showcase-content-404 h1 {
+    font-size: 8rem;
+  }
+
+  .showcase-content-404 p {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .showcase-404-top img {
+    width: 20rem;
+    left: 20%;
+  }
+
+  .showcase-top-404 a {
+    top: 80%;
+    right: 28%;
+  }
+
+  .showcase-content-404 h1 {
+    font-size: 5rem;
+    line-height: 0.5rem;
+  }
+
+  .showcase-content-404 p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .showcase-404::after {
+    box-shadow: inset 40px 30px 100px #000000, inset -40px -30px 100px #000000;
+  }
+
+  .showcase-404-top img {
+    width: 13rem;
+    top: 37%;
+    left: 18%;
+  }
+
+  .showcase-404-top a.btn {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  .showcase-content-404 {
+    margin-top: 8rem;
+  }
+
+  .showcase-content h1 {
+    font-size: 2rem;
+    line-height: 0.5rem;
+  }
+
+  .showcase-content-404 p {
+    line-height: 1.5rem;
+  }
+
+  .showcase-content-404 a.btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
